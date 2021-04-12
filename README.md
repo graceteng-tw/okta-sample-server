@@ -3,12 +3,14 @@
 ## Steps
 
 1. Clone this repository
-2. Run `npm run okta-hosted-login-server:dev"
-3. Go to `http://localhost:8080`
-4. Click on "Login" and log in with your `dev-34146890.okta.com` account (check your TW email for account activation)
-5. You should see a profile with all the Okta information that the server has about your user account
+2. Create a file in the root of the repo folder called `testenv` (no preceding `.` in front of the file name)
+3. Paste the super secret environment vars into `testenv`
+4. Run `npm run okta-hosted-login-server:dev`
+5. Go to `http://localhost:8080`
+6. Click on "Login" and log in with your `dev-34146890.okta.com` account (check your TW email for account activation)
+7. You should see a profile with all the Okta information that the server has about your user account
 
-For authenticated routes, user information is available in the `req.userContext.userinfo` object.
+For authenticated Express routes, user information is available in the `req.userContext.userinfo` object (see the `./common/sample-web-server.js` file).
 
 # Express Sample Applications for Okta
 
