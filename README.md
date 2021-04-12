@@ -1,5 +1,7 @@
 # Okta Sample Server
 
+Adapted wholesale from https://github.com/okta/samples-nodejs-express-4/tree/master/okta-hosted-login
+
 ## Steps
 
 1. Clone this repository
