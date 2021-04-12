@@ -1,3 +1,15 @@
+# Okta Sample Server
+
+## Steps
+
+1. Clone this repository
+2. Run `npm run okta-hosted-login-server:dev"
+3. Go to `http://localhost:8080`
+4. Click on "Login" and log in with your `dev-34146890.okta.com` account (check your TW email for account activation)
+5. You should see a profile with all the Okta information that the server has about your user account
+
+For authenticated routes, user information is available in the `req.userContext.userinfo` object.
+
 # Express Sample Applications for Okta
 
 This repository contains several sample applications that show you how to integrate various Okta use-cases into your Node.js application that uses the Express framework.
@@ -20,11 +32,11 @@ SPA_CLIENT_ID=123YY
 
 Please find the sample that fits your use-case from the table below.
 
-| Sample | Description | Use-Case |
-|--------|-------------|----------|
-| [Okta-Hosted Login](/okta-hosted-login) | An application server that uses the hosted login page on your Okta org, then creates a cookie session for the user in the Express application. | Traditional web applications with server-side rendered pages. |
-| [Custom Login Page](/custom-login) | An application server that uses the Okta Sign-In Widget on a custom login page within the application, then creates a cookie session for the user in the Express application. | Traditional web applications with server-side rendered pages. |
-| [Resource Server](/resource-server) | This is a sample API resource server that shows you how to authenticate requests with access tokens that have been issued by Okta. | Single-Page applications. |
+| Sample                                  | Description                                                                                                                                                                   | Use-Case                                                      |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [Okta-Hosted Login](/okta-hosted-login) | An application server that uses the hosted login page on your Okta org, then creates a cookie session for the user in the Express application.                                | Traditional web applications with server-side rendered pages. |
+| [Custom Login Page](/custom-login)      | An application server that uses the Okta Sign-In Widget on a custom login page within the application, then creates a cookie session for the user in the Express application. | Traditional web applications with server-side rendered pages. |
+| [Resource Server](/resource-server)     | This is a sample API resource server that shows you how to authenticate requests with access tokens that have been issued by Okta.                                            | Single-Page applications.                                     |
 
 ## Running the tests
 
